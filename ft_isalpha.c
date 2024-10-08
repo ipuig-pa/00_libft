@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 09:55:41 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/08 11:15:45 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/08 11:25:43 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,50 @@ int	main(void)
 {
 	int	c;
 
+	c = -1;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 64;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 65;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 82;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 90;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 91;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 96;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 97;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 106;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	c = 122;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
 	c = 123;
-	printf("%d", ft_isalpha(c));
-	printf("%d", isalpha(c));
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
 	return (0);
 }
 */
