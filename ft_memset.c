@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 10:56:14 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/09 11:46:57 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/09 11:54:59 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		b[i] = (unsigned char)c;
+		p[i] = (unsigned char)c;
 		i++;
 	}
 	return (b);
