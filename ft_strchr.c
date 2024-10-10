@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:07:03 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 14:35:57 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/10 14:45:09 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ char	*ft_strchr(const char *s, int c)
 	char	s[] = "Hello World!";
 	int 	c = 114;
 
-	printf("you: %c, strchr: %c", *ft_strchr(s, c), *strchr(s, c));
+	printf("you: %p, strchr: %p", ft_strchr(s, c), strchr(s, c));
 }*/
