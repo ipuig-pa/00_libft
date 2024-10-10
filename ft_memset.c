@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 10:56:14 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 12:22:47 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:24:48 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	main(void)
 	int		c = 56;
 	size_t	len = 4;
 
-	printf("you: %s, memcpy: %s", ft_memset(b1, c, len), memset(b2, c, len));
+	printf("you: %s, memset: %s", ft_memset(b1, c, len), memset(b2, c, len));
 	return (0);
 }
 */
