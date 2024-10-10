@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 11:47:55 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 12:32:54 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/10 14:05:49 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+
 /*
 int	main(void)
 {
@@ -42,7 +43,8 @@ int	main(void)
 
 	ft_bzero(b1, len);
 	bzero(b2, len);
-	printf("you: %c, %c, %c, %c, %c, bzero: %c, %c, %c, %c, %c", b1[0], b1[1], b1[2], b1[3], b1[4], b2[0], b2[1], b2[2], b2[3], b2[4]);
+	printf("you: %c, %c, %c, %c, %c, bzero: %c, %c, %c, %c, %c", 
+	b1[0], b1[1], b1[2], b1[3], b1[4], b2[0], b2[1], b2[2], b2[3], b2[4]);
 	return (0);
 }
 */
