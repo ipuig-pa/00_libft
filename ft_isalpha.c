@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 09:55:41 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/08 11:25:43 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 11:55:37 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 #include <ctype.h>
 */
 
-int	ft_isupper(int c)
+static int	ft_isupper(int c)
 {
-	return ((unsigned char)c >= 'A' && (unsigned char )c <= 'Z');
+	return ((unsigned char)c >= 'A' && (unsigned char)c <= 'Z');
 }
 
-int	ft_islower(int c)
+static int	ft_islower(int c)
 {
 	return ((unsigned char)c >= 'a' && (unsigned char)c <= 'z');
 }
