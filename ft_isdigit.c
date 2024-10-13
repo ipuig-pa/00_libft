@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 11:19:18 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/08 11:41:14 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:12:06 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,12 @@
 
 int	ft_isdigit(int c)
 {
-	return ((unsigned char)c >= '0' && (unsigned char)c <= '9');
+	unsigned char	u_c;
+
+	u_c = (unsigned char)c;
+	if (u_c != c)
+		return (0);
+	return (u_c >= '0' && u_c <= '9');
 }
 
 /*

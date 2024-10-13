@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 09:22:22 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/09 09:32:59 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:31:50 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,12 @@
 
 int	ft_isprint(int c)
 {
-	return ((unsigned char)c >= 32 && (unsigned char)c <= 126);
+	unsigned char	u_c;
+
+	u_c = (unsigned char)c;
+	if (u_c != c)
+		return (0);
+	return (u_c >= 32 && u_c <= 126);
 }
 
 /*

@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:56:47 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:40:39 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:13:04 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n < 0)
 	{
 		write(fd, "-", 1);
-		n_c = -n;
+		n_c = -n_c;
 	}
 	if (n_c >= 10)
 	{
