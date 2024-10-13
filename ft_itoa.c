@@ -6,11 +6,10 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:08:41 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:37:12 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 13:48:13 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
 
@@ -46,7 +45,7 @@ char	*ft_itoa(int n)
 	else if (n < 0)
 	{
 		str[0] = '-';
-		n_c = -n;
+		n_c = -n_c;
 	}
 	while (n_c != 0)
 	{
@@ -57,9 +56,11 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-/*int	main(void)
+/*#include <stdio.h>
+
+int	main(void)
 {
-	int	n = -452356531;
+	int	n = -2147483648;
 
 	printf("%d: %s", n, ft_itoa(n));
 	return (0);
