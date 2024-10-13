@@ -6,14 +6,9 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 09:55:41 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 11:55:37 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:08:07 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-*/
 
 static int	ft_isupper(int c)
 {
@@ -27,10 +22,14 @@ static int	ft_islower(int c)
 
 int	ft_isalpha(int c)
 {
+	if ((unsigned char)c != c)
+		return (0);
 	return (ft_isupper(c) || ft_islower(c));
 }
 
-/*
+/*#include <stdio.h>
+#include <ctype.h>
+
 int	main(void)
 {
 	int	c;
@@ -80,5 +79,9 @@ int	main(void)
 	printf("you:%d,", ft_isalpha(c));
 	printf("isalpha:%d. ", isalpha(c));
 	return (0);
-}
-*/
+	c = 500;
+	printf("int:%d,", c);
+	printf("you:%d,", ft_isalpha(c));
+	printf("isalpha:%d. ", isalpha(c));
+	return (0);
+}*/
