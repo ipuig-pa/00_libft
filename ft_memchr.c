@@ -6,12 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:38:29 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 16:02:33 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:27:23 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <string.h>
 #include <stdio.h>*/
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

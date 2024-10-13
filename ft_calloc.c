@@ -6,12 +6,15 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:15:13 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/11 10:45:30 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 13:23:14 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 #include <stdlib.h>
+#include <errno.h>
+#include <stdint.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 09:34:02 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/09 10:53:19 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:21:04 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 */
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

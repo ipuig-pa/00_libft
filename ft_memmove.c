@@ -6,12 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:10:36 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 13:36:02 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:21:55 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <stdio.h>
 #include <string.h>*/
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

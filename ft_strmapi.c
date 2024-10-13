@@ -6,30 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:22:07 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/11 17:53:05 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:37:53 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-/*#include <stdio.h>
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
-
-char	ft_toupper(unsigned int i, char c)
-{
-	(void)i;
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}*/
+#include "libft.h"
+/*#include <stdio.h>*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

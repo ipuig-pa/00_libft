@@ -6,23 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:32:30 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 14:55:00 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:26:10 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//DELETE FT_STRLEN FROM HERE?!
 /*#include <stdio.h>
-#include <string.h>
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}*/
+#include <string.h>*/
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

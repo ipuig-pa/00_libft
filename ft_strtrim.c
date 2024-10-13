@@ -6,12 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:02:39 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/11 14:54:23 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:35:17 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <stdio.h>
 #include <stddef.h>*/
+#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

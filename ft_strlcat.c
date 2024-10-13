@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:16:18 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 13:37:22 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:22:29 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,7 @@
 /*#include <stdio.h>
 #include <string.h>
 */
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

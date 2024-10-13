@@ -6,22 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:19:37 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 17:18:52 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:29:16 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <string.h>
-#include <stdio.h>
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}*/
+#include <stdio.h>*/
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

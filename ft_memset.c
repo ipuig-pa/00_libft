@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 10:56:14 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 12:24:48 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:21:15 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #include <string.h>
 */
 //This main does not test for the behavior with non printable characters
+
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

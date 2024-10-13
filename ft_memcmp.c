@@ -6,12 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:03:32 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 16:18:34 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:28:22 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <string.h>
 #include <stdio.h>*/
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,12 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:07:03 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 14:45:09 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:23:56 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <string.h>
 #include <stdio.h>*/
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

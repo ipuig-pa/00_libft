@@ -6,28 +6,12 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:54:09 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/11 18:13:52 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:38:54 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
-
-void	ft_toupper(unsigned int i, char *s)
-{
-	(void)i;
-	if (*s >= 'a' && *s <= 'z')
-		*s = *s - 32;
-}*/
+/*#include <stdio.h>*/
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

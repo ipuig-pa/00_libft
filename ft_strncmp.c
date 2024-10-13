@@ -6,12 +6,13 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:03:04 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/10 15:36:54 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:27:45 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <stdio.h>
 #include <string.h>*/
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

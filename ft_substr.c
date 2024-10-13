@@ -6,11 +6,12 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 11:16:25 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/11 12:29:03 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:33:35 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
