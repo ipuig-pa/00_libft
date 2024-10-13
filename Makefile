@@ -1,6 +1,7 @@
-CFLAGS += -Wall -Wextra -Werror
-NAME = libft.a
-SOURCES = 	ft_atoi.c \
+CC := cc
+CFLAGS := -Wall -Wextra -Werror
+NAME := libft.a
+SOURCES := 	ft_atoi.c \
 			ft_bzero.c \
 			ft_calloc.c \
 			ft_isalnum.c \
@@ -35,14 +36,14 @@ SOURCES = 	ft_atoi.c \
 			ft_tolower.c \
 			ft_toupper.c\
 
-OBJECTS = $(SOURCES:.c=.o)
+OBJECTS := $(SOURCES:.c=.o)
 
 all: $(NAME)
 $(NAME): $(OBJECTS)
-	cc $(CFLAGS) -o $(NAME) $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	cc $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS)
@@ -50,4 +51,6 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re:
+re: fclean all
+
+.PHONY: all clean fclean re
