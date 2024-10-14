@@ -6,12 +6,10 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:19:37 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:29:16 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:29:22 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <string.h>
-#include <stdio.h>*/
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
@@ -24,12 +22,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	needle_len = ft_strlen(needle);
 	if (needle_len == 0)
 		return ((char *)haystack);
-	if (len < needle_len)
-		return (NULL);
-	while (i < (len - needle_len + 1) && haystack[i] != '\0')
+	while (i < len && haystack[i] != '\0')
 	{
 		j = 0;
-		while (needle[j] == haystack[i + j] && needle[j] != '\0')
+		while (i + j < len && needle[j] == haystack[i + j] && needle[j])
 			j++;
 		if (j == needle_len)
 			return ((char *)haystack + i);
@@ -39,10 +35,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-/*int	main(void)
+/*#include <string.h>
+#include <stdio.h>
+
+int	main(void)
 {
-	char	hay[] = "Helloo world!";
-	char	ne[] = "o w";
+	char	*hay = NULL;
+	char	ne[] = "fake";
 	size_t	len = 3;
 
 	printf("you: %p, strnstr: %p", ft_strnstr(hay, ne, len), strnstr(hay, ne, len));
