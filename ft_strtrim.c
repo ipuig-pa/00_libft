@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:02:39 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:35:17 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/14 11:20:06 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	while (start < s1_len && ft_strchr(set, (int)s1[start]) != NULL)
 		start++;
-	end = s1_len - 1;
-	while (end > start && ft_strchr(set, (int)s1[end]) != NULL)
+	end = s1_len;
+	while (end > start && ft_strchr(set, (int)s1[end - 1]) != NULL)
 		end--;
-	return (ft_substr(s1, start, end - start + 1));
+	return (ft_substr(s1, start, end - start));
 }
 /*
 int	main(void)
