@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 12:05:18 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:21:32 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/14 09:38:44 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	const unsigned char	*src_c;
 	size_t				i;
 
+	if (dst == src)
+		return (dst);
 	dst_c = (unsigned char *)dst;
 	src_c = (const unsigned char *)src;
 	i = 0;
