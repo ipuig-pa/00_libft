@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:15:13 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 13:23:14 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/14 12:01:09 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t			total_size;
 
 	if (count == 0 || size == 0)
-		total_size = 1;
+		total_size = 0;
 	else if (count > SIZE_MAX / size)
 	{
 		errno = ENOMEM;
