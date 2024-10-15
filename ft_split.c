@@ -6,53 +6,99 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 14:55:04 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:36:16 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 10:36:11 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//refer i repensar!!!!
-
+//#include <stdio.h>
 #include "libft.h"
 #include <stdlib.h>
+
+static size_t	f_word_count(char const *s, char c)
+{
+	size_t	word;
+	size_t	word_count;
+
+	word = 0;
+	word_count = 0;
+	while (s[word] != '\0')
+	{
+		if (s[word] != c && (word == 0 || s[word - 1] == c))
+			word_count++;
+		word++;
+	}
+	return (word_count);
+}
+
+static char	**free_split(char **arr, size_t i)
+{
+	while (i > 0)
+	{
+		free(arr[i]);
+		i--;
+	}
+	free(arr);
+	return (NULL);
+}
+
+size_t	get_start(char const *s, size_t i_start, char c)
+{
+	while (s[i_start] == c && s[i_start] != '\0')
+		i_start++;
+	return (i_start);
+}
+
+size_t	get_len(char const *s, size_t i_start, char c)
+{
+	size_t	word_len;
+
+	word_len = 0;
+	while (s[i_start + word_len] != c && s[i_start + word_len] != '\0')
+		word_len++;
+	return (word_len);
+}
 
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
-	char	*str;
+	size_t	word;
+	size_t	word_count;
 	size_t	i;
-	size_t	j;
-	size_t	n_str;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
-	n_str = 1;
-	str = s;
-	while (ft_strchr(str, (int)c) != NULL)
-	{
-		n_str++;
-		str = ft_strchr(str, (int)c);
-	}
-	arr = (char **)malloc(n_str * sizeof(char *) + 1);
-	if (arr == NULL)
+	word_count = f_word_count(s, c);
+	printf("%d;", (int)word_count);
+	arr = (char **)malloc((word_count + 1) * sizeof(char *));
+	if (!arr)
 		return (NULL);
+	word = 0;
 	i = 0;
-	j = 0;
-	while (i < n_str)
+	while (word < word_count)
 	{
-		arr[i] = ft_substr(s, j, (ft_strchr(str, (int)c) - j));
-		if (arr[i] == NULL)
-		{
-			while (i > 0)
-			{
-				free(arr[i]);
-				i--;
-			}
-			free(arr);
-			return (NULL);
-		}
-		j = ft_strchr(str, (int)c);
-		i++;
+		i = get_start(s, i, c);
+		arr[word] = ft_substr(s, i, get_len(s, i, c));
+		if (arr[word] == NULL)
+			return (free_split(arr, word));
+		word++;
+		i = i + get_len(s, i, c);
 	}
-	arr[i] = NULL;
+	arr[word] = NULL;
 	return (arr);
 }
+
+/*int	main(void)
+{
+	char	s[45] ="^^^1^^2a,^^^^3^^^^--h^^^^";
+	char	**arr;
+	size_t	i;
+
+	arr = ft_split(s, '^');
+	i = 0;
+	while (arr[i])
+	{
+		printf("%s;", arr[i]);
+		i++;
+	}
+	return (0);
+}*/
