@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 14:55:04 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/15 10:36:11 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 10:43:16 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ static char	**free_split(char **arr, size_t i)
 		free(arr[i]);
 		i--;
 	}
+	free(arr[0]);
 	free(arr);
 	return (NULL);
 }
@@ -68,7 +69,6 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_count = f_word_count(s, c);
-	printf("%d;", (int)word_count);
 	arr = (char **)malloc((word_count + 1) * sizeof(char *));
 	if (!arr)
 		return (NULL);
