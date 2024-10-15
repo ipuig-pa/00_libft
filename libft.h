@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 11:02:50 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/14 14:49:03 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 12:14:18 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,6 @@
 # define LIBFT_H
 
 # include <stddef.h>
-
-/*#include <stdint.h>
-#include <errno.h>
-#include <stdlib.h>
-#include <unistd.h>
-// stddef per size_t i NULL
-// stdint per SIZE_MAX
-// errno per calloc, per retornar errno a ENOMEM
-// stdlib per malloc (o nom'es incloure a les funcions necessaries?)
-// unistd per write*/
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
