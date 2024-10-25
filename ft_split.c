@@ -6,13 +6,12 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 14:55:04 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/15 10:43:16 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:02:49 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 #include "libft.h"
-#include <stdlib.h>
 
 static size_t	f_word_count(char const *s, char c)
 {

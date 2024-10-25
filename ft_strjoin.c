@@ -6,12 +6,11 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 12:30:49 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:34:19 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:02:24 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,11 +6,10 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:08:41 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 13:48:13 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:03:46 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static int	get_num_len(int n)

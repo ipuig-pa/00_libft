@@ -6,11 +6,10 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:56:47 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 14:13:04 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:03:17 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

@@ -6,12 +6,9 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:16:18 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:22:29 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:15:55 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//return value not properly defined in the manual
-//ELIMINAR FT_STRLEN D'AQUI!!!
 
 /*#include <stdio.h>
 #include <string.h>

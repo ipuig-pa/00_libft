@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:54:09 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/10/13 12:38:54 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:10:27 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	if (s == NULL)
 		return ;
-	s_len = ft_strlen(s);
+	s_len = (unsigned int)ft_strlen(s);
 	while (i < s_len)
 	{
 		f(i, &s[i]);
