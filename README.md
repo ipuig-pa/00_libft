@@ -84,3 +84,9 @@ Functions to create and manipulate linked lists:
 - Node creation and destruction (`ft_lstnew`, `ft_lstdelone`, `ft_lstclear`)
 - List operations (`ft_lstadd_front`, `ft_lstadd_back`, `ft_lstsize`, `ft_lstlast`)
 - List iteration  (`ft_lstiter`)
+
+## License
+
+---
+
+This project was developed as part of the curriculum at 42 School. Use of this code must comply with the school's academic integrity policies.
